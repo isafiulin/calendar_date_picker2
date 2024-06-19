@@ -325,7 +325,7 @@ class _CalendarViewState extends State<_CalendarView> {
         children: <Widget>[
           Container(
             padding: widget.config.centerAlignModePicker != true
-                ? const EdgeInsetsDirectional.only(start: 16, end: 4)
+                ? const EdgeInsetsDirectional.only(start: 16, end: 16)
                 : const EdgeInsetsDirectional.only(start: 8, end: 8),
             height: (widget.config.controlsHeight ?? _subHeaderHeight),
             child: Row(
@@ -333,11 +333,11 @@ class _CalendarViewState extends State<_CalendarView> {
                 const Spacer(),
                 TextButton(
                   child: Text(
-                    'Cancel',
+                    'Close',
                     style: TextStyle(
                       color: widget.config.selectedDayHighlightColor,
-                      fontWeight: FontWeight.w700,
-                      fontSize: 14,
+                      fontWeight: FontWeight.w400,
+                      fontSize: 18,
                     ),
                   ),
                   onPressed: () {
