@@ -332,7 +332,7 @@ class _CalendarViewState extends State<_CalendarView> {
               children: <Widget>[
                 const Spacer(),
                 TextButton(
-                  Text: Text('Cancel', style:TextStyle(
+                  child: Text('Cancel', style:TextStyle(
                     color: widget.config.selectedDayHighlightColor ??
                         colorScheme.primary,
                     fontWeight: FontWeight.w700,
