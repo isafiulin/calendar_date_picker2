@@ -183,7 +183,7 @@ class _DayPickerState extends State<_DayPicker> {
           dayColor = widget.config.selectedDayHighlightColor ?? todayColor;
           decoration = BoxDecoration(
             borderRadius: widget.config.dayBorderRadius,
-            border: Border.all(color: dayColor),
+            color: Colors.grey,
             shape: widget.config.dayBorderRadius != null
                 ? BoxShape.rectangle
                 : BoxShape.circle,
